@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:radial-gradient(rgb(105, 105, 200),rgb(255, 125, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head
+{
+    width: 100%;
+    min-height: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.imagecontainer
+{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap; 
+   
+   
+   
+    
+}
+.imagecontainer div
+{
+
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+div .imgframe
+{
+    width: 100%;
+    height:20%;
+    margin-bottom: 5px;
+    transition: width 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.imgframe .image
+{
+    width: 95%;
+    height: 95%;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 13px 13px 13px  rgb(50, 50, 50);
+  
+}
+div .imgframe .image:hover{
+    width: 100%;
+    height: 100%;
+    transition: width 2;
+}
+.imgframe .image img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.lightbox
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+ 
+
+ 
+}
+.imageview
+{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    border: 2px solid  black;
+   
+  
+
+}
+.imageview img
+{
+    width: 100%;
+    height: 100%;
+
+   
+}
+.crossbtn
+{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    color:white;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    
+}
+.crossbtn:hover{
+    color:rgb(0,0,0,0.9);
+    font-weight: 900;
+    background-color:white;
+    cursor: pointer;
+
+}
+.Npbtn
+{
+    height: 400px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:transparent;
+}
+.Npbtn div
+{
+
+ width: 100%;
+ height: 10%;
+ font-size: 30px;
+ font-weight: 900;
+ color: white;
+}
+.Npbtn div:hover
+{
+    border:1px solid white;
+    
+    border-radius: 30%;
+    cursor: pointer;
+}
+.footer
+{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid white;
+}
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .imagecontainer
+    {
+        width: 100%;
+        height: 100vh;
+    }
+    .imagecontainer div
+    {
+        width: 20%;
+        height: 100%;
+        margin-right: 5px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div .imgframe
+{
+    width: 100%;
+    height:12%;
+    margin-bottom: 5px;
+    transition: width 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+}

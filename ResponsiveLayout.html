@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ResponsiveDesign.css">
+    <script src="ResponsiveActions.js"></script>"
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">Image Gallery
+   
+    </div>
+    <div class="imagecontainer" id="ig">
+      
+
+        <div>
+                      <div class="imgframe">
+                        <div class="image">
+                            <img src="image2.jpg" class="images" onclick="view(this)">
+                        </div>
+                      </div>
+        </div>
+        <div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image1.jpg" alt="0" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image3.jpg" alt="3" class="images"  onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image4.jpg" alt="4" class="images"  onclick="view(this)">
+                     </div></div>
+        </div>
+        <div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image5.jpg" alt="5" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image6.jpg" alt="6" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image7.jpg" alt="7" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image8.jpg" alt="8" class="images" onclick="view(this)">
+                     </div></div>
+        </div> 
+        <div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image9.jpg" alt="9" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image10.jpg" alt="10" class="images" onclick="view(this)">
+                     </div></div>
+                     <div class="imgframe"><div class="image">
+                        <img src="imag11.jpg" alt="11" class="images" onclick="view(this)">
+                     </div></div>
+        </div>
+        <div>
+                     <div class="imgframe"><div class="image">
+                        <img src="image12.jpg" alt="12" class="images" onclick="view(this)">
+                     </div></div>
+        </div>
+    </div>
+    <div class="lightbox" id="lightboxview">
+   
+      
+           <div class="crossbtn" onclick="closebox()">✕</div>   
+          <div  class="Npbtn" onclick="prev()"><div>⟪</div></div>
+       
+           <div class="imageview">
+           
+                  <img id="frame" alt="notfound">
+           </div>
+           <div class="Npbtn" onclick="next()"><div>⟫</div></div>
+           
+    </div>
+    <div class="footer">
+      <p> &copy Tringapps</p>
+    </div>
+</body>
+</html>
